@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <title>Conteúdo +18</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1032381935101857');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+    src="https://www.facebook.com/tr?id=1032381935101857&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     body {
       background-color: #111;
@@ -11,13 +31,16 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .container {
       max-width: 700px;
-      margin: 0 auto;
       padding: 40px 20px;
+      text-align: center;
     }
 
     h1 {
@@ -36,6 +59,8 @@
       list-style: none;
       padding: 0;
       margin: 20px 0;
+      text-align: left;
+      display: inline-block;
     }
 
     ul li {
@@ -52,6 +77,11 @@
       text-decoration: none;
       border-radius: 8px;
       margin-top: 30px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff3333;
     }
 
     .disclaimer {
@@ -79,10 +109,11 @@
 
     <p><strong>⚠️ Conteúdo proibido para menores. Clique por sua conta e risco.</strong></p>
 
-    <a class="button" href="https://t.me/natashasteelebot?start=cmbgqf3w20cmemv0sn0n0pu7q">🔥 SIM, quero conversa com ela 🔥</a>
+    <a class="button" href="https://t.me/seubot" onclick="fbq('track', 'InitiateCheckout');">
+      🔥 SIM, QUERO ENTRAR NO PRIVADO DELA 🔥
+    </a>
 
     <p class="disclaimer">🔒 Ao continuar, você confirma ser maior de 18 anos.</p>
   </div>
 </body>
 </html>
-
